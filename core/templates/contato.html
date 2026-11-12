@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTATO</title>
+</head>
+<body>
+    <h1>CONTATO</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+         <table>
+         <thead>
+        <tr>
+            <th>Nome</th>
+            <th></th>
+            <th>Email</th>
+            <th></th>
+            <th>Celular</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for contato in conts %}
+            <tr>
+                <td><a href="{% url 'contato' contato.id%}"> {{contato.nome}}</a></td>
+                <td></td>
+                <td>{{contato.email}}</td>
+                <td></td>
+                <td>{{contato.celular}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+<p></p>
+<a href="/index/"><button type="button"> Voltar</button></a>
+</html>
