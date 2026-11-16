@@ -1,17 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>INDICE</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
+<center>
     <h1>Indice</h1>
     <h2>{{   Curso }}</h2>
-
+    <img src="{% static 'images/logo.png' %}">
+    <p>
 <a href="/produtos">
   <button type="button">Produtos</button>
 
 <a href="/contato"><button >Contatos</button></a>
-
+</a>
+</p>
+<button onclick="teste()">Clique Aqui</button>
+</center>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

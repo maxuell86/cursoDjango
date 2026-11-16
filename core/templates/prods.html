@@ -1,10 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
+<center>
     <h1>Lista de Produtos</h1>
      <table>
         <thead>
@@ -28,9 +31,8 @@
             {% endfor %}
         </tbody>
     </table>
+    <a href="/index"><button type="button">Voltar</button></a>
+    </center>
 </body>
 
-    <p></p>
-
-<a href="/index"><button type="button">Voltar</button></a>
 </html>
